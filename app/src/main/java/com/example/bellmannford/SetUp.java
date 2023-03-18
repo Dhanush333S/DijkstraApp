@@ -23,10 +23,12 @@ public class SetUp extends AppCompatActivity {
         to23=findViewById(R.id.to23);
         to24=findViewById(R.id.to24);
         to34=findViewById(R.id.to34);
-        int array[]={Integer.parseInt(to01.getText().toString()),Integer.parseInt(to02.getText().toString()),Integer.parseInt(to12.getText().toString()),Integer.parseInt(to13.getText().toString()),Integer.parseInt(to23.getText().toString()),Integer.parseInt(to24.getText().toString()),Integer.parseInt(to34.getText().toString())};
+
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                int array[]={Integer.parseInt(to01.getText().toString()),Integer.parseInt(to02.getText().toString()),Integer.parseInt(to12.getText().toString()),Integer.parseInt(to13.getText().toString()),Integer.parseInt(to23.getText().toString()),Integer.parseInt(to24.getText().toString()),Integer.parseInt(to34.getText().toString())};
                 Intent i= new Intent(SetUp.this,MainActivity.class);
                 i.putExtra("number",array);
                 startActivity(i);

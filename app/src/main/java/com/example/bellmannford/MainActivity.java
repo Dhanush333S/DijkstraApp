@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         // create input graph
         BellmanFord.V = 5;
-        BellmanFord.E = 7;
+        BellmanFord.E = 14;
         BellmanFord.edges = new BellmanFord.Edge[BellmanFord.E];
         BellmanFord.edges[0] = new BellmanFord.Edge(0, 1, arr[0]);
         BellmanFord.edges[1] = new BellmanFord.Edge(0, 2, arr[1]);
@@ -33,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
         BellmanFord.edges[4] = new BellmanFord.Edge(2, 3, arr[4]);
         BellmanFord.edges[5] = new BellmanFord.Edge(2, 4, arr[5]);
         BellmanFord.edges[6] = new BellmanFord.Edge(3, 4, arr[6]);
+        BellmanFord.edges[7] = new BellmanFord.Edge(1, 0, arr[0]);
+        BellmanFord.edges[8] = new BellmanFord.Edge(2, 0, arr[1]);
+        BellmanFord.edges[9] = new BellmanFord.Edge(2, 1, arr[2]);
+        BellmanFord.edges[10] = new BellmanFord.Edge(3, 1, arr[3]);
+        BellmanFord.edges[11] = new BellmanFord.Edge(3, 2, arr[4]);
+        BellmanFord.edges[12] = new BellmanFord.Edge(4, 2, arr[5]);
+        BellmanFord.edges[13] = new BellmanFord.Edge(4, 3, arr[6]);
 //        BellmanFord.edges[7] = new BellmanFord.Edge(4, 3, -3);
+
 
 
         BellmanFord.dist = new int[BellmanFord.V];
